@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem; //16px
+  color: $color-black;
+  font-family: 'Lato', sans-serif;
+}
+
+ul {
+  // get rid of default bullets
+  list-style-type: none;
+}
