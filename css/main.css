@@ -375,12 +375,19 @@ h1 {
   left: 0;
   width: 70%;
   height: 100vh;
+  transition: all 0.5s linear;
+  transform: translateX(-300px);
+  opacity: 0;
   z-index: 1000;
   background-color: #ffe5fd;
 }
 .navigation-sm .nav-bar li {
   padding: 1rem;
   font-style: italic;
+}
+.navigation-sm .show {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .container {
