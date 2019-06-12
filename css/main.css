@@ -347,10 +347,40 @@ body {
   font-size: 1rem;
   color: #262626;
   font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.2;
 }
 
 ul {
   list-style-type: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+.navigation-sm {
+  width: 100%;
+}
+.navigation-sm .menu-icon {
+  width: 100%;
+  text-align: right;
+  color: #fff;
+  font-size: 2rem;
+}
+.navigation-sm .nav-bar {
+  padding-top: 3.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100vh;
+  z-index: 1000;
+  background-color: #ffe5fd;
+}
+.navigation-sm .nav-bar li {
+  padding: 1rem;
+  font-style: italic;
 }
 
 .container {
@@ -359,13 +389,41 @@ ul {
 }
 
 .header {
+  text-align: center;
+  position: relative;
   height: 100vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/main-bg.jpg") no-repeat center;
   background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 .header .conatiner {
   height: 100%;
+}
+.header .intro-text {
+  background-color: rgba(255, 229, 253, 0.5);
+  padding: 1.5rem;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .intro-text h1 {
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.header .intro-text .and {
+  font-weight: 300;
+  font-size: 3rem;
+  display: block;
+}
+.header .intro-text h3 {
+  margin-top: 1rem;
+  font-weight: 400;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=main.css.map */

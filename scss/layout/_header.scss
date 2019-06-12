@@ -1,10 +1,43 @@
 .header {
+  text-align: center;
+  position: relative;
+  // make the header to take up the full vieport height and full width of the container
   height: 100vh;
   width: 100%;
+  // set up the background image
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/main-bg.jpg') no-repeat center;
   background-size: cover;
+  // clip the background image
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   .conatiner {
     height: 100%;
+  }
+  .intro-text {
+    background-color: rgba($color-pink, .5);
+    padding: 1.5rem;
+    // add box shadow
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .5);
+    // center this container inside its parent
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+      letter-spacing: 3px;
+      font-weight: 300;
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+    .and {
+      font-weight: 300;
+      font-size: 3rem;
+      display: block;
+    }
+    h3 {
+      margin-top: 1rem;
+      font-weight: 400;
+      font-style: italic;
+    }
   }
 
 

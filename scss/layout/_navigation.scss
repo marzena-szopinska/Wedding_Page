@@ -1,0 +1,25 @@
+.navigation-sm {
+  width: 100%;
+  .menu-icon {
+    width: 100%;
+    text-align: right;
+    color: $color-white;
+    font-size: 2rem;
+  }
+  .nav-bar {
+    padding-top: 3.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    // make this always on top
+    z-index: 1000;
+    background-color: $color-pink;
+    li {
+      padding: 1rem;
+      font-style: italic;
+    }
+  }
+
+}
