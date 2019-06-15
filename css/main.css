@@ -382,8 +382,16 @@ h1 {
   background-color: #EDECE9;
 }
 .navigation-sm .nav-bar li {
+  margin: 0 auto;
+  width: 60%;
   padding: 1rem;
   font-style: italic;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.navigation-sm .nav-bar li:hover {
+  transform: scale(1.2);
+  color: rgba(252, 132, 0, 0.2);
 }
 .navigation-sm .show {
   transform: translateX(0);

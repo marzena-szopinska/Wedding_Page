@@ -23,8 +23,16 @@
     z-index: 1000;
     background-color: $color-creamy;
     li {
+      margin: 0 auto;
+      width: 60%;
       padding: 1rem;
       font-style: italic;
+      position: relative;
+      transition: all .3s ease;
+      &:hover {
+        transform: scale(1.2);
+        color: rgba($color-super-orange, .2);
+      }
     }
   }
 
