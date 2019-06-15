@@ -379,7 +379,7 @@ h1 {
   transform: translateX(-300px);
   opacity: 0;
   z-index: 1000;
-  background-color: #ffe5fd;
+  background-color: #EDECE9;
 }
 .navigation-sm .nav-bar li {
   padding: 1rem;
@@ -408,7 +408,7 @@ h1 {
   height: 100%;
 }
 .header .intro-text {
-  background-color: rgba(255, 229, 253, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 1.5rem;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5);
   position: absolute;
