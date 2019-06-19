@@ -8,7 +8,7 @@ body {
   font-size: 1rem; //16px
   color: $color-black;
   font-family: 'Lato', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   line-height: 1.2;
 }
 
@@ -23,4 +23,8 @@ img {
 
 h1 {
   margin: 0;
+}
+
+p {
+  margin-bottom: 1rem;
 }

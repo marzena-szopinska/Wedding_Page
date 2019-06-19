@@ -10,7 +10,7 @@
 
   .nav-bar {
     padding-top: 3.5rem;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 70%;
@@ -21,7 +21,7 @@
 
     // make this always on top
     z-index: 1000;
-    background-color: $color-creamy;
+    background-color: $color-light-gray;
     li {
       margin: 0 auto;
       width: 60%;
@@ -31,7 +31,7 @@
       transition: all .3s ease;
       &:hover {
         transform: scale(1.2);
-        color: $color-light-pink;
+        color: darken($color-light-pink, 10%);
       }
     }
   }

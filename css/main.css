@@ -347,7 +347,7 @@ body {
   font-size: 1rem;
   color: #262626;
   font-family: "Lato", sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   line-height: 1.2;
 }
 
@@ -363,6 +363,10 @@ h1 {
   margin: 0;
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
 .navigation-sm {
   width: 100%;
 }
@@ -374,7 +378,7 @@ h1 {
 }
 .navigation-sm .nav-bar {
   padding-top: 3.5rem;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 70%;
@@ -383,7 +387,7 @@ h1 {
   transform: translateX(-300px);
   opacity: 0;
   z-index: 1000;
-  background-color: #EDECE9;
+  background-color: #e0deda;
 }
 .navigation-sm .nav-bar li {
   margin: 0 auto;
@@ -395,7 +399,7 @@ h1 {
 }
 .navigation-sm .nav-bar li:hover {
   transform: scale(1.2);
-  color: #f7cecb;
+  color: #eac5c2;
 }
 .navigation-sm .show {
   transform: translateX(0);
@@ -445,6 +449,10 @@ h1 {
   font-style: italic;
 }
 
+.composition .composition__photo {
+  margin-top: 1rem;
+}
+
 .flower {
   max-width: 30%;
   position: absolute;
@@ -452,6 +460,23 @@ h1 {
   right: 98px;
   z-index: 2000;
   transform: rotate(-6deg);
+}
+
+.story {
+  background-color: #f7e9e8;
+  padding-top: 12rem;
+  padding-bottom: 5rem;
+  margin-top: -25vh;
+  text-align: center;
+}
+.story h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-bottom: 1.5rem;
+}
+.story p {
+  font-style: italic;
 }
 
 /*# sourceMappingURL=main.css.map */
