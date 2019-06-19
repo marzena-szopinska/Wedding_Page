@@ -1,0 +1,15 @@
+
+.fade {
+  // play fade animation
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}

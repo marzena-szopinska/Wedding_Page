@@ -26,3 +26,40 @@ hamburger.addEventListener('click', () => {
     navBar.classList.remove('show');
   }
 });
+
+// IMAGE SLIDER
+let slideIndex = 0;
+
+
+const showSlides = () => {
+  // target all dots
+  // const dots = document.getElementsByClassName('dot');
+  // create list of slides
+  const slides = document.getElementsByClassName('slide');
+  // loop through the array of slides
+  for(let i = 0; i < slides.length; i++){
+    // and hide all slides from the start
+    slides[i].style.display = 'none';
+  }
+  // increase the slide index by one
+  slideIndex++;
+  // check for slide index number
+  if(slideIndex > slides.length){
+    slideIndex = 1;
+  }
+  // loop through the array of dots
+  // for(let i = 0; i < dots.length; i++){
+  //   // remove any active classes
+  //   dots[i].className = dots[i].className.replace(' active', '');
+  //
+  // }
+  // target the specific image using slide index variable and show it on the page
+  slides[slideIndex - 1].style.display = 'block';
+  // target the specific dot that corresponds to the image above
+  // dots[slideIndex - 1].className += ' active';
+
+  // change the image every 3 seconds
+  setTimeout(showSlides, 3000);
+}
+
+showSlides();
