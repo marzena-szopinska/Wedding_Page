@@ -5,12 +5,23 @@
   margin-top: -25vh;
   text-align: center;
 
+  .container {
+    @media (min-width: 768px) {
+        width: 75%;
+        margin: 0 auto;
+    }
+  }
+
   h2 {
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 3px;
     margin-bottom: 1.5rem;
     font-size: 1.65rem;
+
+    @media (min-width: 768px) {
+        word-spacing: 40px;
+    }
   }
 
   p {

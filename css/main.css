@@ -505,12 +505,23 @@ p {
   margin-top: -25vh;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .story .container {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
 .story h2 {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 3px;
   margin-bottom: 1.5rem;
   font-size: 1.65rem;
+}
+@media (min-width: 768px) {
+  .story h2 {
+    word-spacing: 40px;
+  }
 }
 .story p {
   font-style: italic;
