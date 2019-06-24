@@ -34,6 +34,10 @@
         color: darken($color-light-pink, 10%);
       }
     }
+
+    @media (min-width:768px){
+      width: 50%;
+    }
   }
 
   .show {

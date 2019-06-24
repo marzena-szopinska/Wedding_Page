@@ -401,6 +401,11 @@ p {
   transform: scale(1.2);
   color: #eac5c2;
 }
+@media (min-width: 768px) {
+  .navigation-sm .nav-bar {
+    width: 50%;
+  }
+}
 .navigation-sm .show {
   transform: translateX(0);
   opacity: 1;
@@ -424,6 +429,7 @@ p {
   height: 100%;
 }
 .header .intro-text {
+  width: 85%;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 1.5rem;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5);
@@ -438,15 +444,34 @@ p {
   font-size: 3rem;
   text-transform: uppercase;
 }
+@media (min-width: 768px) {
+  .header .intro-text h1 {
+    display: inline-block;
+  }
+}
 .header .intro-text .and {
   font-weight: 300;
   font-size: 3rem;
   display: block;
 }
+@media (min-width: 768px) {
+  .header .intro-text .and {
+    display: inline-block;
+  }
+}
 .header .intro-text h3 {
   margin-top: 1rem;
   font-weight: 400;
   font-style: italic;
+}
+@media (min-width: 768px) {
+  .header .intro-text {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .header .intro-text .spaced-words {
+    word-spacing: 40px;
+  }
 }
 
 .composition .composition__photo {

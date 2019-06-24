@@ -13,6 +13,7 @@
     height: 100%;
   }
   .intro-text {
+    width: 85%;
     background-color: rgba($color-white, .5);
     padding: 1.5rem;
     // add box shadow
@@ -27,17 +28,32 @@
       font-weight: 300;
       font-size: 3rem;
       text-transform: uppercase;
+      @media (min-width: 768px){
+        display: inline-block;
+      }
     }
     .and {
       font-weight: 300;
       font-size: 3rem;
       display: block;
+      @media (min-width: 768px){
+        display: inline-block;
+      }
     }
     h3 {
       margin-top: 1rem;
       font-weight: 400;
       font-style: italic;
     }
+
+    @media (min-width: 768px) {
+      .spaced-words {
+        word-spacing: 40px;
+      }
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
   }
 
 
