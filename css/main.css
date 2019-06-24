@@ -465,18 +465,17 @@ p {
     opacity: 1;
   }
 }
-.flower {
-  max-width: 30%;
+.divider {
+  width: 90px;
   position: absolute;
-  bottom: 52px;
-  right: 98px;
+  bottom: 0;
+  right: 3px;
   z-index: 2000;
-  transform: rotate(-6deg);
 }
 
 .story {
   background-color: #f7e9e8;
-  padding-top: 12rem;
+  padding-top: 14rem;
   padding-bottom: 5rem;
   margin-top: -25vh;
   text-align: center;
