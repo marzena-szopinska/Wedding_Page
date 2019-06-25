@@ -1,0 +1,13 @@
+.btn-white {
+  display: block;
+  width: 60%;
+  background-color: #fff;
+  border: none;
+  padding: 1rem;
+  font-style: italic;
+  color: $color-black;
+
+  @media (min-width: 768px) {
+    width: 25%;
+  }
+}

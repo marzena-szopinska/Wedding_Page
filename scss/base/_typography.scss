@@ -21,6 +21,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  color: $color-black;
+}
+
 h1 {
   margin: 0;
 }
@@ -32,6 +36,14 @@ h2 {
   letter-spacing: 3px;
   margin-bottom: 1.5rem;
   font-size: 1.65rem;
+}
+
+.spaced-letters {
+  letter-spacing: 6px;
+
+  @media (min-width: 768px){
+    letter-spacing: 10px;
+  }
 }
 
 p {

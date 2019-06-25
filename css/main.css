@@ -359,6 +359,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  color: #262626;
+}
+
 h1 {
   margin: 0;
 }
@@ -370,6 +374,15 @@ h2 {
   letter-spacing: 3px;
   margin-bottom: 1.5rem;
   font-size: 1.65rem;
+}
+
+.spaced-letters {
+  letter-spacing: 6px;
+}
+@media (min-width: 768px) {
+  .spaced-letters {
+    letter-spacing: 10px;
+  }
 }
 
 p {
@@ -483,6 +496,21 @@ p {
   }
 }
 
+.btn-white {
+  display: block;
+  width: 60%;
+  background-color: #fff;
+  border: none;
+  padding: 1rem;
+  font-style: italic;
+  color: #262626;
+}
+@media (min-width: 768px) {
+  .btn-white {
+    width: 25%;
+  }
+}
+
 .composition .composition__photo {
   margin-top: 1rem;
 }
@@ -500,7 +528,7 @@ p {
   }
 }
 .divider {
-  width: 90px;
+  width: 115px;
   position: absolute;
   bottom: 0;
   right: 3px;
@@ -510,10 +538,10 @@ p {
 
 .details .container {
   width: 100%;
-  padding-bottom: 10rem;
-  padding-top: 7rem;
+  height: 100%;
+  padding-bottom: 6rem;
+  padding-top: 8rem;
   background-color: #fafafa;
-  clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
 }
 .details .container .center-box {
   display: flex;
@@ -564,9 +592,6 @@ p {
 .details .container .wedding-info .where {
   margin-top: 3rem;
 }
-.details .container .spaced-letters {
-  letter-spacing: 6px;
-}
 
 .story {
   background-color: #f7e9e8;
@@ -588,6 +613,31 @@ p {
 }
 .story p {
   font-style: italic;
+}
+
+.rsvp {
+  height: 55vh;
+  background-color: #f7e9e8;
+}
+.rsvp .container {
+  text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rsvp .container h2 {
+  color: gray;
+}
+.rsvp .container a {
+  text-decoration: none;
+}
+.rsvp .container p {
+  font-style: italic;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
 /*# sourceMappingURL=main.css.map */

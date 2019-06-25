@@ -1,12 +1,10 @@
 .details {
   .container {
     width: 100%;
-    padding-bottom: 10rem;
-    padding-top: 7rem;
+    height: 100%;
+    padding-bottom: 6rem;
+    padding-top: 8rem;
     background-color: $color-white;
-    // clip the background image
-    clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
-
     .center-box {
       display: flex;
       justify-content: center;
@@ -57,10 +55,5 @@
         margin-top: 3rem;
       }
     }
-
-    .spaced-letters {
-      letter-spacing: 6px;
-    }
   }
-
 }
