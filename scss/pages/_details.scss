@@ -1,8 +1,10 @@
 .details {
   position: relative;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
   padding-top: 7rem;
   background-color: $color-white;
+  // clip the background image
+  clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
   .wedding-info {
     font-style: italic;
 
