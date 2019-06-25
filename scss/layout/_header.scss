@@ -9,8 +9,12 @@
   background-size: cover;
   // clip the background image
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  .conatiner {
+  .container {
     height: 100%;
+
+    @media (min-width: 768px){
+      width: 100%;
+    }
   }
   .intro-text {
     width: 85%;

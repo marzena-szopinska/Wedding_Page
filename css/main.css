@@ -450,7 +450,7 @@ p {
 @media (min-width: 768px) {
   .container {
     margin: 0 auto;
-    width: 75%;
+    width: 85%;
   }
 }
 
@@ -463,8 +463,13 @@ p {
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
-.header .conatiner {
+.header .container {
   height: 100%;
+}
+@media (min-width: 768px) {
+  .header .container {
+    width: 100%;
+  }
 }
 .header .intro-text {
   width: 85%;
