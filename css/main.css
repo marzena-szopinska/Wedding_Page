@@ -544,7 +544,7 @@ p {
 }
 .video-bg video {
   position: absolute;
-  top: 0;
+  top: -40px;
   left: 0;
   height: 100%;
 }
@@ -636,7 +636,7 @@ p {
 }
 
 .rsvp {
-  height: 55vh;
+  height: 60vh;
   background-color: #f7e9e8;
 }
 .rsvp .container {
