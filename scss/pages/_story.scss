@@ -12,14 +12,13 @@
     }
   }
 
-  .spaced-words {
-
-    @media (min-width: 768px) {
-        word-spacing: 40px;
-    }
-  }
-
   p {
     font-style: italic;
+    margin-bottom: 2rem;
+
+    span {
+      font-weight: 900;
+      color: #C0C0C0;
+    }
   }
 }

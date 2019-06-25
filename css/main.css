@@ -345,7 +345,7 @@ template {
 
 body {
   font-size: 1rem;
-  color: #262626;
+  color: black;
   font-family: "Lato", sans-serif;
   letter-spacing: 1.5px;
   line-height: 1.2;
@@ -376,6 +376,15 @@ h2 {
   font-size: 1.65rem;
 }
 
+.spaced-words {
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .spaced-words {
+    word-spacing: 40px;
+  }
+}
+
 .spaced-letters {
   letter-spacing: 6px;
 }
@@ -387,6 +396,7 @@ h2 {
 
 p {
   margin-bottom: 1rem;
+  font-weight: 200;
 }
 
 .navigation-sm {
@@ -436,6 +446,12 @@ p {
 .container {
   width: 100%;
   padding: 1rem;
+}
+@media (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    width: 75%;
+  }
 }
 
 .header {
@@ -507,7 +523,7 @@ p {
 }
 @media (min-width: 768px) {
   .btn-white {
-    width: 25%;
+    width: 40%;
   }
 }
 
@@ -556,12 +572,14 @@ p {
   }
 }
 
-.details .container {
+.details {
   width: 100%;
+  background-color: #fafafa;
+}
+.details .container {
   height: 100%;
   padding-bottom: 6rem;
   padding-top: 8rem;
-  background-color: #fafafa;
 }
 .details .container .center-box {
   display: flex;
@@ -626,13 +644,13 @@ p {
     margin: 0 auto;
   }
 }
-@media (min-width: 768px) {
-  .story .spaced-words {
-    word-spacing: 40px;
-  }
-}
 .story p {
   font-style: italic;
+  margin-bottom: 2rem;
+}
+.story p span {
+  font-weight: 900;
+  color: #C0C0C0;
 }
 
 .rsvp {
