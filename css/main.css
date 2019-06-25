@@ -363,6 +363,15 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-bottom: 1.5rem;
+  font-size: 1.65rem;
+}
+
 p {
   margin-bottom: 1rem;
 }
@@ -373,7 +382,7 @@ p {
 .navigation-sm .menu-icon {
   width: 100%;
   text-align: right;
-  color: #fff;
+  color: #fafafa;
   font-size: 2rem;
 }
 .navigation-sm .nav-bar {
@@ -430,7 +439,7 @@ p {
 }
 .header .intro-text {
   width: 85%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(250, 250, 250, 0.5);
   padding: 1.5rem;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -496,6 +505,42 @@ p {
   bottom: 0;
   right: 3px;
   z-index: 2000;
+  opacity: 0.3;
+}
+
+.details {
+  position: relative;
+  padding-bottom: 5rem;
+  padding-top: 7rem;
+  background-color: #fafafa;
+}
+.details .wedding-info {
+  font-style: italic;
+}
+.details .wedding-info .when, .details .wedding-info .where {
+  letter-spacing: 0.2rem;
+  margin-bottom: 3rem;
+}
+.details .wedding-info .when h3, .details .wedding-info .where h3 {
+  color: #edd2d0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.details .wedding-info .when {
+  margin-top: 4rem;
+}
+.details .wedding-info .where {
+  margin-top: 3rem;
+}
+.details .spaced-letters {
+  letter-spacing: 6px;
+}
+.details .divider {
+  top: 55px;
+  left: 32px;
+  transform: rotate(136deg);
+  width: 150px;
+  opacity: 0.2;
 }
 
 .story {
@@ -511,15 +556,8 @@ p {
     margin: 0 auto;
   }
 }
-.story h2 {
-  text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 3px;
-  margin-bottom: 1.5rem;
-  font-size: 1.65rem;
-}
 @media (min-width: 768px) {
-  .story h2 {
+  .story .spaced-words {
     word-spacing: 40px;
   }
 }

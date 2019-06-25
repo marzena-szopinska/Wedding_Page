@@ -1,0 +1,39 @@
+.details {
+  position: relative;
+  padding-bottom: 5rem;
+  padding-top: 7rem;
+  background-color: $color-white;
+  .wedding-info {
+    font-style: italic;
+
+    .when, .where {
+      h3 {
+        color: $color-pink;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+      letter-spacing: 0.2rem;
+      margin-bottom: 3rem;
+    }
+
+    .when {
+      margin-top: 4rem;
+    }
+
+    .where{
+      margin-top: 3rem;
+    }
+  }
+
+  .spaced-letters {
+    letter-spacing: 6px;
+  }
+
+  .divider {
+    top: 55px;
+    left: 32px;
+    transform: rotate(136deg);
+    width: 150px;
+    opacity: .2;
+  }
+}
