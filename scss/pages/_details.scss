@@ -1,41 +1,66 @@
 .details {
-  position: relative;
-  padding-bottom: 10rem;
-  padding-top: 7rem;
-  background-color: $color-white;
-  // clip the background image
-  clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
-  .wedding-info {
-    font-style: italic;
+  .container {
+    width: 100%;
+    padding-bottom: 10rem;
+    padding-top: 7rem;
+    background-color: $color-white;
+    // clip the background image
+    clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
 
-    .when, .where {
-      h3 {
-        color: $color-pink;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+    .center-box {
+      display: flex;
+      justify-content: center;
+
+      .decorated-text {
+        position: relative;
+        .divider {
+          top: -64px;
+          left: 7px;
+          transform: rotate(136deg);
+          width: 150px;
+          opacity: .2;
+        }
       }
-      letter-spacing: 0.2rem;
-      margin-bottom: 3rem;
     }
 
-    .when {
-      margin-top: 4rem;
+    .wedding-info {
+      font-style: italic;
+      @media (min-width: 768px){
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .when, .where {
+        h3 {
+          color: $color-pink;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+        letter-spacing: 0.2rem;
+        margin-bottom: 3rem;
+
+        @media (min-width: 768px){
+          width: 49%;
+          text-align: center;
+        }
+      }
+
+      .when {
+        margin-top: 4rem;
+
+        @media (min-width: 768px){
+          margin-top: 3rem;
+        }
+      }
+
+      .where{
+        margin-top: 3rem;
+      }
     }
 
-    .where{
-      margin-top: 3rem;
+    .spaced-letters {
+      letter-spacing: 6px;
     }
   }
 
-  .spaced-letters {
-    letter-spacing: 6px;
-  }
-
-  .divider {
-    top: 55px;
-    left: 32px;
-    transform: rotate(136deg);
-    width: 150px;
-    opacity: .2;
-  }
 }

@@ -508,46 +508,70 @@ p {
   opacity: 0.3;
 }
 
-.details {
-  position: relative;
+.details .container {
+  width: 100%;
   padding-bottom: 10rem;
   padding-top: 7rem;
   background-color: #fafafa;
   clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
 }
-.details .wedding-info {
+.details .container .center-box {
+  display: flex;
+  justify-content: center;
+}
+.details .container .center-box .decorated-text {
+  position: relative;
+}
+.details .container .center-box .decorated-text .divider {
+  top: -64px;
+  left: 7px;
+  transform: rotate(136deg);
+  width: 150px;
+  opacity: 0.2;
+}
+.details .container .wedding-info {
   font-style: italic;
 }
-.details .wedding-info .when, .details .wedding-info .where {
+@media (min-width: 768px) {
+  .details .container .wedding-info {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.details .container .wedding-info .when, .details .container .wedding-info .where {
   letter-spacing: 0.2rem;
   margin-bottom: 3rem;
 }
-.details .wedding-info .when h3, .details .wedding-info .where h3 {
+.details .container .wedding-info .when h3, .details .container .wedding-info .where h3 {
   color: #edd2d0;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.details .wedding-info .when {
+@media (min-width: 768px) {
+  .details .container .wedding-info .when, .details .container .wedding-info .where {
+    width: 49%;
+    text-align: center;
+  }
+}
+.details .container .wedding-info .when {
   margin-top: 4rem;
 }
-.details .wedding-info .where {
+@media (min-width: 768px) {
+  .details .container .wedding-info .when {
+    margin-top: 3rem;
+  }
+}
+.details .container .wedding-info .where {
   margin-top: 3rem;
 }
-.details .spaced-letters {
+.details .container .spaced-letters {
   letter-spacing: 6px;
-}
-.details .divider {
-  top: 55px;
-  left: 32px;
-  transform: rotate(136deg);
-  width: 150px;
-  opacity: 0.2;
 }
 
 .story {
   background-color: #f7e9e8;
   padding-top: 14rem;
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
   margin-top: -25vh;
   text-align: center;
 }
