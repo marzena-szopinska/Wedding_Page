@@ -6,4 +6,8 @@
     margin: 0 auto;
     width: 85%;
   }
+
+  @media (min-width: 1024px){
+    max-width: 1024px;
+  }
 }

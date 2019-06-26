@@ -1,8 +1,12 @@
 .divider {
-  width: 115px;
+  width: 120px;
   position: absolute;
   bottom: 0;
   right: 3px;
   z-index: 2000;
   opacity: 0.3;
+
+  @media (min-width: 768px){
+    width: 135px;
+  }
 }

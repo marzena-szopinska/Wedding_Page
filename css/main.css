@@ -408,6 +408,11 @@ p {
   color: #fafafa;
   font-size: 2rem;
 }
+@media (min-width: 1024px) {
+  .navigation-sm .menu-icon {
+    display: none;
+  }
+}
 .navigation-sm .nav-bar {
   padding-top: 3.5rem;
   position: absolute;
@@ -418,7 +423,7 @@ p {
   transition: all 0.5s linear;
   transform: translateX(-300px);
   opacity: 0;
-  z-index: 1000;
+  z-index: 2000;
   background-color: #e0deda;
 }
 .navigation-sm .nav-bar li {
@@ -426,7 +431,6 @@ p {
   width: 60%;
   padding: 1rem;
   font-style: italic;
-  position: relative;
   transition: all 0.3s ease;
 }
 .navigation-sm .nav-bar li:hover {
@@ -436,6 +440,18 @@ p {
 @media (min-width: 768px) {
   .navigation-sm .nav-bar {
     width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .navigation-sm .nav-bar {
+    transform: translateX(0);
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: 10%;
+    color: black;
   }
 }
 .navigation-sm .show {
@@ -451,6 +467,11 @@ p {
   .container {
     margin: 0 auto;
     width: 85%;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
   }
 }
 
@@ -507,13 +528,24 @@ p {
   font-weight: 400;
   font-style: italic;
 }
+.header .intro-text .spaced-words {
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .header .intro-text .spaced-words {
+    word-spacing: 40px;
+    margin-bottom: 2rem;
+  }
+}
 @media (min-width: 768px) {
   .header .intro-text {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
-  .header .intro-text .spaced-words {
-    word-spacing: 40px;
+}
+@media (min-width: 1024px) {
+  .header .intro-text {
+    width: 60%;
   }
 }
 
@@ -550,6 +582,17 @@ footer .container .copyright {
 
 .composition .composition__photo {
   margin-top: 1rem;
+  box-shadow: 0 1.5rem 4rem rgba(38, 38, 38, 0.4);
+}
+@media (min-width: 1024px) {
+  .composition .composition__photo {
+    width: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  .composition {
+    position: relative;
+  }
 }
 
 .fade {
@@ -565,12 +608,17 @@ footer .container .copyright {
   }
 }
 .divider {
-  width: 115px;
+  width: 120px;
   position: absolute;
   bottom: 0;
   right: 3px;
   z-index: 2000;
   opacity: 0.3;
+}
+@media (min-width: 768px) {
+  .divider {
+    width: 135px;
+  }
 }
 
 .video-bg {

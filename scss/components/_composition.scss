@@ -1,5 +1,29 @@
 .composition {
   .composition__photo {
     margin-top: 1rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+
+    @media (min-width: 1024px){
+      width: 45%;
+
+    }
+  }
+
+  .--p1 {
+
+  }
+
+  .--p2 {
+
+  }
+
+  .--p3 {
+
+  }
+
+
+
+  @media (min-width: 1024px){
+    position: relative;
   }
 }

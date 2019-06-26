@@ -6,6 +6,10 @@
     text-align: right;
     color: $color-white;
     font-size: 2rem;
+
+    @media (min-width: 1024px){
+      display: none;
+    }
   }
 
   .nav-bar {
@@ -20,24 +24,41 @@
     opacity: 0;
 
     // make this always on top
-    z-index: 1000;
+    z-index: 2000;
     background-color: $color-light-gray;
     li {
       margin: 0 auto;
       width: 60%;
       padding: 1rem;
       font-style: italic;
-      position: relative;
       transition: all .3s ease;
       &:hover {
         transform: scale(1.2);
         color: darken($color-light-pink, 10%);
       }
+
+      @media (min-width:1024px){
+
+      }
+
     }
 
     @media (min-width:768px){
       width: 50%;
     }
+
+    @media (min-width:1024px){
+      transform: translateX(0);
+      opacity: 1;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      width: 10%;
+      color: black;
+    }
+
+
   }
 
   .show {
