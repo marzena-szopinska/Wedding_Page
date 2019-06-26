@@ -1,0 +1,11 @@
+.registry {
+  .container {
+    .spaced-letters {
+
+      @media (min-width: 768px){
+        letter-spacing: 20px;
+      }
+
+    }
+  }
+}

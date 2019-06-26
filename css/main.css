@@ -517,6 +517,14 @@ p {
   }
 }
 
+footer .container {
+  font-style: italic;
+  text-align: center;
+}
+footer .container h3 {
+  font-weight: 200;
+}
+
 .btn-white {
   display: block;
   width: 60%;
@@ -620,7 +628,7 @@ p {
 }
 @media (min-width: 768px) {
   .details .container .wedding-info .when, .details .container .wedding-info .where {
-    width: 49%;
+    width: 48%;
     text-align: center;
   }
 }
@@ -681,6 +689,12 @@ p {
   font-style: italic;
   margin-top: 1rem;
   margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .registry .container .spaced-letters {
+    letter-spacing: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
