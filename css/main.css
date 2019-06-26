@@ -691,6 +691,13 @@ footer .container h3 {
   margin-bottom: 3rem;
 }
 
+.registry {
+  height: 75vh;
+  width: 100%;
+  background-color: #fafafa;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+}
 @media (min-width: 768px) {
   .registry .container .spaced-letters {
     letter-spacing: 20px;

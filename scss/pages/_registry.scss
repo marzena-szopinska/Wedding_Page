@@ -1,7 +1,12 @@
 .registry {
+  height: 75vh;
+  width: 100%;
+  background-color: $color-white;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
   .container {
-    .spaced-letters {
 
+    .spaced-letters {
       @media (min-width: 768px){
         letter-spacing: 20px;
       }
