@@ -1,9 +1,16 @@
 footer {
+  background-color: $color-light-pink;
   .container {
+    margin-top: -13rem;
+    padding-top: 14rem;
     font-style: italic;
     text-align: center;
-    h3 {
+    h3, p {
       font-weight: 200;
+    }
+
+    .copyright {
+      font-size: 0.7rem;
     }
   }
 }

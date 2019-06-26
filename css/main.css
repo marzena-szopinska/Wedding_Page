@@ -517,12 +517,20 @@ p {
   }
 }
 
+footer {
+  background-color: #f7e9e8;
+}
 footer .container {
+  margin-top: -13rem;
+  padding-top: 14rem;
   font-style: italic;
   text-align: center;
 }
-footer .container h3 {
+footer .container h3, footer .container p {
   font-weight: 200;
+}
+footer .container .copyright {
+  font-size: 0.7rem;
 }
 
 .btn-white {
