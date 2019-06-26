@@ -1,29 +1,35 @@
 .composition {
+  width: 100%;
   .composition__photo {
     margin-top: 1rem;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+    border-radius: 2px;
 
     @media (min-width: 1024px){
       width: 45%;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+      position: absolute;
+      z-index: 10;
 
     }
   }
 
   .--p1 {
-
+    left: 0; top: 2rem;
   }
 
   .--p2 {
-
+    right: 0; top: 2rem;
   }
 
   .--p3 {
-
+    left: 27%; top:10rem;
   }
 
 
 
   @media (min-width: 1024px){
     position: relative;
+    // give the container a height
+    height: 28rem;
   }
 }

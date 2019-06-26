@@ -580,18 +580,37 @@ footer .container .copyright {
   }
 }
 
+.composition {
+  width: 100%;
+}
 .composition .composition__photo {
   margin-top: 1rem;
-  box-shadow: 0 1.5rem 4rem rgba(38, 38, 38, 0.4);
+  border-radius: 2px;
 }
 @media (min-width: 1024px) {
   .composition .composition__photo {
     width: 45%;
+    box-shadow: 0 1.5rem 4rem rgba(38, 38, 38, 0.4);
+    position: absolute;
+    z-index: 10;
   }
+}
+.composition .--p1 {
+  left: 0;
+  top: 2rem;
+}
+.composition .--p2 {
+  right: 0;
+  top: 2rem;
+}
+.composition .--p3 {
+  left: 27%;
+  top: 10rem;
 }
 @media (min-width: 1024px) {
   .composition {
     position: relative;
+    height: 28rem;
   }
 }
 
