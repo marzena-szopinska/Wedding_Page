@@ -40,6 +40,7 @@ const showSlides = () => {
   for(let i = 0; i < slides.length; i++){
     // and hide all slides from the start
     slides[i].style.display = 'none';
+    // slides[i].style.opacity = 0;
   }
   // increase the slide index by one
   slideIndex++;
@@ -54,12 +55,13 @@ const showSlides = () => {
   //
   // }
   // target the specific image using slide index variable and show it on the page
-  slides[slideIndex - 1].style.display = 'block';
+   slides[slideIndex - 1].style.display = 'block';
+  // slides[slideIndex - 1].style.opacity = 1;
   // target the specific dot that corresponds to the image above
   // dots[slideIndex - 1].className += ' active';
 
   // change the image every 3 seconds
-  setTimeout(showSlides, 3000);
+  setTimeout(showSlides, 5000);
 }
 
 showSlides();

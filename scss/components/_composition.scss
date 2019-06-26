@@ -9,20 +9,39 @@
       box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
       position: absolute;
       z-index: 10;
+      transition: all .2s;
+      // make space between the outline and the image
+      outline-offset: 1rem;
 
+      &:hover {
+        outline: 1.5rem solid $color-black;
+        transform: scale(1.05) translateY(-.5rem);
+        box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+        z-index: 20;
+
+      }
     }
   }
 
   .--p1 {
-    left: 0; top: 2rem;
+    @media (min-width: 1024px){
+      left: 0; top: 2rem;
+    }
   }
 
   .--p2 {
+    @media (min-width: 1024px){
     right: 0; top: 2rem;
+    z-index: 8;
+    }
   }
 
   .--p3 {
-    left: 27%; top:10rem;
+      @media (min-width: 1024px){
+
+      left: 27%; top: 14rem;
+
+    }
   }
 
 
@@ -30,6 +49,6 @@
   @media (min-width: 1024px){
     position: relative;
     // give the container a height
-    height: 28rem;
+    height: 30rem;
   }
 }
