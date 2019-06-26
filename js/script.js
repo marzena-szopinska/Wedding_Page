@@ -61,7 +61,7 @@ const showSlides = () => {
   // dots[slideIndex - 1].className += ' active';
 
   // change the image every 3 seconds
-  setTimeout(showSlides, 5000);
+  setTimeout(showSlides, 7000);
 }
 
 showSlides();

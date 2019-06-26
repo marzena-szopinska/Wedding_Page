@@ -35,10 +35,19 @@
           width: 70px;
           height: 70px;
         }
+
+        @media (min-width: 1440px){
+          width: 100px;
+          height: 100px;
+        }
       }
 
       @media (min-width: 768px){
         padding-top: 5rem;
+      }
+
+      @media (min-width: 1440px){
+        padding-top: 8rem;
       }
     }
 
