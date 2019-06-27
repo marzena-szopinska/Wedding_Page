@@ -79,7 +79,7 @@ window.addEventListener('scroll', () => {
 
   console.log(Math.ceil(scrolled));
   // if we scrolled to the bottom of the screen
-  if(Math.ceil(scrolled) === Math.ceil(totalScrollabeHeight) && window.matchMedia("(min-width: 768px)").matches){
+  if(Math.ceil(scrolled) >= Math.ceil(totalScrollabeHeight) && window.matchMedia("(min-width: 768px)").matches){
     console.log('You reached the bottom!');
     // add the button to the DOM, only if it doesnt exist
     if(document.querySelector('.btn-white-back') === null){
@@ -92,10 +92,17 @@ window.addEventListener('scroll', () => {
           backButton.classList.add('pulse');
           document.querySelector('body').appendChild(backButton);
         }
-      }
-      else {
+    }
+
+
+    if(Math.ceil(scrolled) < (Math.ceil(totalScrollabeHeight) - 200) && window.matchMedia("(min-width: 768px)").matches){
+      if(document.querySelector('.btn-white-back') != null){
         // remove the button
+        const button = document.querySelector('.btn-white-back');
+        const body = document.querySelector('body');
+        button.remove();
       }
+    }
 });
 
 // ELEMENT INSERTION

@@ -649,6 +649,17 @@ footer .container .copyright {
   text-transform: uppercase;
   text-align: center;
 }
+@media (min-width: 1440px) {
+  .btn-white-back p {
+    padding-top: 1.2rem;
+  }
+}
+@media (min-width: 1440px) {
+  .btn-white-back {
+    height: 90px;
+    width: 90px;
+  }
+}
 
 .pulse {
   animation-iteration-count: infinite;
@@ -952,8 +963,8 @@ footer .container .copyright {
 }
 @media (min-width: 1440px) {
   .registry .container .brands .icon {
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 85px;
   }
 }
 @media (min-width: 768px) {
