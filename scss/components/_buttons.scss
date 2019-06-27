@@ -22,3 +22,49 @@
     width: 20%;
   }
 }
+
+.btn-white-back {
+  position: relative;
+  text-decoration: none;
+  position: fixed;
+  bottom: 37px;
+  right: 47px;
+  display: block;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba($color-black, .2);
+  background-color: #fff;
+  border: none;
+  padding: 1rem;
+  font-style: italic;
+  color: $color-black;
+
+  p {
+    padding-top: .7rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+
+}
+
+.pulse {
+
+  // fire fadeIn animation
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-name: fadeIn;
+  animation-direction: alternate;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: .35;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

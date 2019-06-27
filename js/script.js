@@ -67,6 +67,37 @@ const showSlides = () => {
 // call the function
 showSlides();
 
+// ADD A BUTTON WHEN YOU SCROLLED PASSED THE HEADER
+
+// <a href='#' class="btn-white">Register Now</a>
+
+window.addEventListener('scroll', () => {
+  // calculate the total scrollable height
+  const totalScrollabeHeight = document.documentElement.scrollHeight - window.innerHeight;
+  // show hom many pixels we scrolled
+  const scrolled = window.scrollY;
+
+  console.log(Math.ceil(scrolled));
+  // if we scrolled to the bottom of the screen
+  if(Math.ceil(scrolled) === Math.ceil(totalScrollabeHeight) && window.matchMedia("(min-width: 768px)").matches){
+    console.log('You reached the bottom!');
+    // add the button to the DOM, only if it doesnt exist
+    if(document.querySelector('.btn-white-back') === null){
+          // create a button element
+          let backButton = document.createElement('a');
+          // add class and href attributes
+          backButton.href = '#header';
+          backButton.classList.add('btn-white-back');
+          backButton.innerHTML = '<p>Top</p>';
+          backButton.classList.add('pulse');
+          document.querySelector('body').appendChild(backButton);
+        }
+      }
+      else {
+        // remove the button
+      }
+});
+
 // ELEMENT INSERTION
 
 // insert divider image when the screen is 1024px or wider
