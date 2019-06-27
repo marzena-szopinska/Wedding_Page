@@ -30,16 +30,22 @@
       margin: 0 auto;
       width: 60%;
       padding: 1rem;
-      font-style: italic;
-      transition: all .3s ease;
-      &:hover {
-        transform: scale(1.2);
-        color: darken($color-light-pink, 10%);
+      a {
+        display: block;
+        text-decoration: none;
+        font-style: italic;
+        transition: all .2s ease;
+        &:hover {
+          color: darken($color-light-pink, 10%);
+          transform: scale(1.2);
+        }
+        @media (min-width:1024px){
+          color: white;
+        }
       }
 
       @media (min-width:1024px){
           width: 90%;
-          color: white;
           font-size: 0.75rem;
       }
 
@@ -52,11 +58,11 @@
     @media (min-width:1024px){
       transform: translateX(0);
       opacity: 1;
-      position: fixed;
+      position: absolute;
       top: 0;
       left: 0;
       background-color: transparent;
-      width: 12%;
+      width: 16%;
     }
 
 
@@ -65,6 +71,10 @@
   .show {
     transform: translateX(0);
     opacity: 1;
+  }
+
+  @media (min-width:1024px){
+    font-weight: 400;
   }
 
 }

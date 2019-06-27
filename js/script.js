@@ -1,3 +1,5 @@
+// SETTING UP THE HAMBURGER MENU
+
 // grab hamburger element
 const hamburger = document.getElementById('hamburger');
 // grab the nav bar element
@@ -28,9 +30,8 @@ hamburger.addEventListener('click', () => {
 });
 
 // IMAGE SLIDER
+
 let slideIndex = 0;
-
-
 const showSlides = () => {
   // target all dots
   // const dots = document.getElementsByClassName('dot');
@@ -63,5 +64,25 @@ const showSlides = () => {
   // change the image every 3 seconds
   setTimeout(showSlides, 7000);
 }
-
+// call the function
 showSlides();
+
+// ELEMENT INSERTION
+
+// insert divider image when the screen is 1024px or wider
+// target the footer and the container inside it
+// const footerContainer = document.querySelector('footer').querySelector('.container');
+// console.log(footerContainer);
+// // if the screen is 1024px or wider add the image
+// if (window.matchMedia("(min-width: 768px)").matches) {
+//   //<img src='images/divider-flower.png' alt='flower' class='divider'>
+//   let newDivider = document.createElement('img');
+//   // add a class
+//   newDivider.classList.add('divider');
+//   // set the source attribute
+//   newDivider.src = 'images/divider-flower.png';
+//   // set alternative text if the image wont show up
+//   newDivider.alt =  'gray flower';
+//   // insert the image element to the DOM
+//   footerContainer.appendChild(newDivider);
+// }
