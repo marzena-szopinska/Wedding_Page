@@ -610,10 +610,20 @@ footer .container .copyright {
   padding: 1rem;
   font-style: italic;
   color: #262626;
+  transition: all 0.2s;
+}
+.btn-white:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(38, 38, 38, 0.2);
 }
 @media (min-width: 768px) {
   .btn-white {
-    width: 40%;
+    width: 28%;
+  }
+}
+@media (min-width: 1024px) {
+  .btn-white {
+    width: 20%;
   }
 }
 
