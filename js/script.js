@@ -168,13 +168,21 @@ navBar.addEventListener('click', (e) => {
 function addEventToTheButton(element){
   if(element != null){
     element.addEventListener('click', (e) => {
+      // if the user gits the paragraph inside the anchor
       if(e.target.tagName === 'P'){
-        // target the parent of the paragraph
+        // ...target the parent of the paragraph
         const pParent = e.target.parentNode;
-        // get the href attribute of that parent
+        // ...get the href attribute of that parent
         const link = pParent.getAttribute('href');
-        // play smooth animation
+        // ...play smooth animation
         smoothScrolling(link, 3000);
+      }
+      // if the user hits the anchor
+      if( e.target.tagName === 'A') {
+        // ...get the link
+        const link = e.target.getAttribute('href');
+        // ...play smooth animation
+        smoothScrolling(link, 3000);  
       }
     })
   }
