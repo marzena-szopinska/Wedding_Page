@@ -69,15 +69,12 @@ showSlides();
 
 // ADD A BUTTON WHEN YOU SCROLLED PASSED THE HEADER
 
-// <a href='#' class="btn-white">Register Now</a>
-
 window.addEventListener('scroll', () => {
   // calculate the total scrollable height
   const totalScrollabeHeight = document.documentElement.scrollHeight - window.innerHeight;
   // show hom many pixels we scrolled
   const scrolled = window.scrollY;
 
-  console.log(Math.ceil(scrolled));
   // if we scrolled to the bottom of the screen
   if(Math.ceil(scrolled) >= Math.ceil(totalScrollabeHeight) && window.matchMedia("(min-width: 768px)").matches){
     console.log('You reached the bottom!');
@@ -88,39 +85,79 @@ window.addEventListener('scroll', () => {
           // add class and href attributes
           backButton.href = '#header';
           backButton.classList.add('btn-white-back');
+          // add some text
           backButton.innerHTML = '<p>Top</p>';
+          // add pulse class to fire fade in animation
           backButton.classList.add('pulse');
+          // add the button to the dom
           document.querySelector('body').appendChild(backButton);
         }
     }
 
-
+    // if we are scrolling up...
     if(Math.ceil(scrolled) < (Math.ceil(totalScrollabeHeight) - 200) && window.matchMedia("(min-width: 768px)").matches){
       if(document.querySelector('.btn-white-back') != null){
         // remove the button
         const button = document.querySelector('.btn-white-back');
-        const body = document.querySelector('body');
         button.remove();
       }
     }
 });
 
-// ELEMENT INSERTION
 
-// insert divider image when the screen is 1024px or wider
-// target the footer and the container inside it
-// const footerContainer = document.querySelector('footer').querySelector('.container');
-// console.log(footerContainer);
-// // if the screen is 1024px or wider add the image
-// if (window.matchMedia("(min-width: 768px)").matches) {
-//   //<img src='images/divider-flower.png' alt='flower' class='divider'>
-//   let newDivider = document.createElement('img');
-//   // add a class
-//   newDivider.classList.add('divider');
-//   // set the source attribute
-//   newDivider.src = 'images/divider-flower.png';
-//   // set alternative text if the image wont show up
-//   newDivider.alt =  'gray flower';
-//   // insert the image element to the DOM
-//   footerContainer.appendChild(newDivider);
-// }
+// SMOOTH SCROLLING
+function smoothScrolling(target, duration) {
+  // store the clicked target
+  const targett = document.querySelector(target);
+  // get position from the target to the top of the screen
+  const targetPosition = targett.getBoundingClientRect().top;
+  // get how much px we scrolled down
+  const startPosition = window.pageYOffset; // relative position to the window not to the element
+  // get the distance between the two
+  const distance = targetPosition - startPosition;
+  // set the the start time
+  let startTime = null;
+
+  function animation(currentTime) {
+      if(startTime === null) {
+        startTime = currentTime;
+      }
+
+      const timeElapsed = currentTime - startTime;
+      // make use of the easing function
+      const run = ease(timeElapsed, startPosition, distance, duration);
+      window.scrollTo(0, run); // (x, y)
+      if(timeElapsed < duration){
+        requestAnimationFrame(animation); // makes our animation nice and smooth
+      }
+  }
+
+  // add easing function that you can find on gizma.com/easing
+  // t - timeElapsed
+  // b - startPosition
+  // c - distance
+  // d - duration
+  function ease(t, b, c, d){
+    t /= d / 2;
+    if(t < 1) return c / 2 * t * t + b;
+    t--;
+    return -c /2 * (t * (t - 2) - 1) + b;
+  }
+  // loop through the animation function at 60fps
+  requestAnimationFrame(animation); // makes our animation nice and smooth
+}
+
+// add event listener to the navigation bar
+navBar.addEventListener('click', (e) => {
+  // if clicked element inside the navbar parent is an anchor
+  if(e.target.tagName === 'A') {
+    // store that target
+    const target = e.target;
+    // get the link of this target
+    const link = target.getAttribute('href');
+    // and play smooth scroll animation
+    smoothScrolling(link, 2000);
+  }
+});
+
+// add event listener to the button that takes to the top of the page

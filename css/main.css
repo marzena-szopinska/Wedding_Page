@@ -645,19 +645,19 @@ footer .container .copyright {
   color: #262626;
 }
 .btn-white-back p {
-  padding-top: 0.7rem;
+  padding-top: 0.6rem;
   text-transform: uppercase;
   text-align: center;
 }
 @media (min-width: 1440px) {
   .btn-white-back p {
-    padding-top: 1.2rem;
+    padding-top: 1rem;
   }
 }
 @media (min-width: 1440px) {
   .btn-white-back {
-    height: 90px;
-    width: 90px;
+    height: 80px;
+    width: 80px;
   }
 }
 
