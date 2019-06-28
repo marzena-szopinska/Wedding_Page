@@ -89,8 +89,12 @@ window.addEventListener('scroll', () => {
           backButton.innerHTML = '<p>Top</p>';
           // add pulse class to fire fade in animation
           backButton.classList.add('pulse');
-          // add the button to the dom
-          document.querySelector('body').appendChild(backButton);
+          // add the button to the dom before the script tag
+          const script = document.querySelector('script');
+          const body = document.querySelector('body');
+          body.insertBefore(backButton, script);
+          // add click event to the button
+          addEventToTheButton(backButton);
         }
     }
 
@@ -160,4 +164,18 @@ navBar.addEventListener('click', (e) => {
   }
 });
 
-// add event listener to the button that takes to the top of the page
+// if the button exists, add event listener to the button that takes to the top of the page
+function addEventToTheButton(element){
+  if(element != null){
+    element.addEventListener('click', (e) => {
+      if(e.target.tagName === 'P'){
+        // target the parent of the paragraph
+        const pParent = e.target.parentNode;
+        // get the href attribute of that parent
+        const link = pParent.getAttribute('href');
+        // play smooth animation
+        smoothScrolling(link, 3000);
+      }
+    })
+  }
+}
