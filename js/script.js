@@ -145,7 +145,7 @@ function smoothScrolling(target, duration) {
     t /= d / 2;
     if(t < 1) return c / 2 * t * t + b;
     t--;
-    return -c /2 * (t * (t - 2) - 1) + b;
+    return -c / 2 * (t * (t - 2) - 1) + b;
   }
   // loop through the animation function at 60fps
   requestAnimationFrame(animation); // makes our animation nice and smooth
@@ -182,8 +182,8 @@ function addEventToTheButton(element){
         // ...get the link
         const link = e.target.getAttribute('href');
         // ...play smooth animation
-        smoothScrolling(link, 3000);  
+        smoothScrolling(link, 3000);
       }
-    })
+    });
   }
 }
