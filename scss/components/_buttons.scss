@@ -1,4 +1,4 @@
-.btn-white {
+.btn-white, .btn-pink {
   display: block;
   width: 60%;
   background-color: #fff;
@@ -21,6 +21,11 @@
   @media (min-width: 1024px) {
     width: 20%;
   }
+}
+
+.btn-pink {
+  background-color: #f7e9e8;
+  text-decoration: none;
 }
 
 .btn-white-back {
@@ -58,7 +63,6 @@
 }
 
 .pulse {
-
   // fire fadeIn animation
   animation-iteration-count: infinite;
   animation-duration: 1.5s;

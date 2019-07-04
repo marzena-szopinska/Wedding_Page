@@ -1,4 +1,15 @@
-.location-footer {
+.location-footer .container {
   margin-top: 1rem;
-  padding-top: 1rem; 
+  padding-top: 1rem;
+}
+
+.location {
+  
+  .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

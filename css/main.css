@@ -602,7 +602,7 @@ footer .container .copyright {
   font-size: 0.7rem;
 }
 
-.btn-white {
+.btn-white, .btn-pink {
   display: block;
   width: 60%;
   background-color: #fff;
@@ -612,19 +612,24 @@ footer .container .copyright {
   color: #262626;
   transition: all 0.2s;
 }
-.btn-white:hover {
+.btn-white:hover, .btn-pink:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(38, 38, 38, 0.2);
 }
 @media (min-width: 768px) {
-  .btn-white {
+  .btn-white, .btn-pink {
     width: 28%;
   }
 }
 @media (min-width: 1024px) {
-  .btn-white {
+  .btn-white, .btn-pink {
     width: 20%;
   }
+}
+
+.btn-pink {
+  background-color: #f7e9e8;
+  text-decoration: none;
 }
 
 .btn-white-back {
@@ -978,9 +983,17 @@ footer .container .copyright {
   }
 }
 
-.location-footer {
+.location-footer .container {
   margin-top: 1rem;
   padding-top: 1rem;
+}
+
+.location .container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=main.css.map */
