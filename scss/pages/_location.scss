@@ -4,12 +4,18 @@
 }
 
 .location {
-  
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   .container {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    p {
+      margin-top: 2rem;
+      font-style: italic;
+    }
   }
 }

@@ -630,6 +630,7 @@ footer .container .copyright {
 .btn-pink {
   background-color: #f7e9e8;
   text-decoration: none;
+  margin-top: 2rem;
 }
 
 .btn-white-back {
@@ -988,12 +989,20 @@ footer .container .copyright {
   padding-top: 1rem;
 }
 
+.location {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
 .location .container {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.location .container p {
+  margin-top: 2rem;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=main.css.map */
