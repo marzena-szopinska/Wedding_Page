@@ -782,6 +782,10 @@ footer .container .copyright {
   }
 }
 
+.map {
+  background-color: #e0deda;
+}
+
 .details {
   width: 100%;
   background-color: #fafafa;
@@ -985,7 +989,7 @@ footer .container .copyright {
 }
 
 .location-footer .container {
-  margin-top: 1rem;
+  margin-top: 6rem;
   padding-top: 1rem;
 }
 
