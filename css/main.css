@@ -977,6 +977,22 @@ footer .container .copyright {
     height: 85px;
   }
 }
+.registry .container .brands .icon[alt="aws icon"] {
+  width: 75px;
+  height: 60px;
+}
+@media (min-width: 768px) {
+  .registry .container .brands .icon[alt="aws icon"] {
+    width: 85px;
+    height: 70px;
+  }
+}
+@media (min-width: 1440px) {
+  .registry .container .brands .icon[alt="aws icon"] {
+    width: 115px;
+    height: 85px;
+  }
+}
 @media (min-width: 768px) {
   .registry .container .brands {
     padding-top: 5rem;
