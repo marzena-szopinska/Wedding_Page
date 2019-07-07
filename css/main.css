@@ -670,11 +670,11 @@ footer .container .copyright {
 .pulse {
   animation-iteration-count: infinite;
   animation-duration: 1.5s;
-  animation-name: fadeIn;
+  animation-name: fadeInButton;
   animation-direction: alternate;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInButton {
   from {
     opacity: 0.35;
   }
