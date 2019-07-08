@@ -3,10 +3,9 @@
   width: 60%;
   background-color: #fff;
   border: none;
-  padding: 1rem;
-  font-style: italic;
+  @include space-inside($top: 1rem, $right: 1rem, $bottom: 1rem, $left: 1rem);
+  @include italic-font;
   color: $color-black;
-
   transition: all .2s;
 
   &:hover {
@@ -30,15 +29,11 @@
 }
 
 .btn-white-back {
-  position: relative;
-  text-decoration: none;
-  position: fixed;
-  bottom: 37px;
-  right: 47px;
+  @include positioning($position: relative, $top: null, $right: null, $bottom: null, $left: null);
+  @include remove-underline;
+  @include positioning($position: fixed, $right: 47px, $bottom: 37px);
   display: block;
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
+  @include rounded($width: 70px, $height: 70px);
   box-shadow: 0 10px 20px rgba($color-black, .2);
   background-color: #fff;
   border: none;

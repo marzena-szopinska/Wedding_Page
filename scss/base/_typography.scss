@@ -8,7 +8,7 @@ body {
   font-size: 1rem; //16px
   color: black;
   font-family: 'Lato', sans-serif;
-  letter-spacing: 1.5px;
+  @include letter-space(1.5px);
   line-height: 1.2;
 }
 
@@ -32,10 +32,10 @@ h1 {
 h2 {
   text-align: center;
   color: $color-black;
-  text-transform: uppercase;
+  @include big-letters;
   font-weight: 300;
-  letter-spacing: 3px;
-  margin-bottom: 1.5rem;
+  @include letter-space(3px);
+  @include space-outside($bottom: 1.5rem);
   font-size: 1.65rem;
   @media (min-width: 1024px) {
     font-size: 1.85rem;
@@ -43,25 +43,25 @@ h2 {
 }
 
 .spaced-words {
-  margin-bottom: 3rem;
+  @include space-outside($bottom: 3rem);
   @media (min-width: 768px) {
       word-spacing: 40px;
   }
 }
 
 .spaced-letters {
-  letter-spacing: 6px;
+  @include letter-space(6px);
 
   @media (min-width: 768px){
-    letter-spacing: 10px;
+    @include letter-space(10px);
   }
 
   @media (min-width: 1024px) {
-    letter-spacing: 20px;
+    @include letter-space(20px);
   }
 }
 
 p {
-  margin-bottom: 1rem;
+  @include space-outside($bottom: 1rem);
   font-weight: 200;
 }

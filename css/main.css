@@ -607,7 +607,10 @@ footer .container .copyright {
   width: 60%;
   background-color: #fff;
   border: none;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
   font-style: italic;
   color: #262626;
   transition: all 0.2s;
@@ -637,11 +640,11 @@ footer .container .copyright {
   position: relative;
   text-decoration: none;
   position: fixed;
-  bottom: 37px;
   right: 47px;
+  bottom: 37px;
   display: block;
-  height: 70px;
   width: 70px;
+  height: 70px;
   border-radius: 50%;
   box-shadow: 0 10px 20px rgba(38, 38, 38, 0.2);
   background-color: #fff;

@@ -1,0 +1,43 @@
+@mixin letter-space($space) {
+  letter-spacing: $space;
+}
+
+@mixin space-inside($top: null, $right: null, $bottom: null, $left: null) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+
+@mixin space-outside($top: null, $right: null, $bottom: null, $left: null){
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+@mixin positioning($position: null, $top: null, $right: null, $bottom: null, $left: null){
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin big-letters {
+  text-transform: uppercase;
+}
+
+@mixin italic-font {
+    font-style: italic;
+}
+
+@mixin remove-underline {
+  text-decoration: none;
+}
+
+@mixin rounded ($width: null, $height: null) {
+  width: $width;
+  height: $height;
+  border-radius: 50%;
+}
