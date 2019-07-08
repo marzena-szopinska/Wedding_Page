@@ -70,6 +70,7 @@ showSlides();
 // ADD A BUTTON WHEN YOU SCROLLED PASSED THE HEADER
 
 window.addEventListener('scroll', () => {
+
   // calculate the total scrollable height
   const totalScrollabeHeight = document.documentElement.scrollHeight - window.innerHeight;
   // show hom many pixels we scrolled
@@ -108,6 +109,44 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// SLIDE IN ANIMATION
+function debounce(func, wait = 20, immediate = true){
+  var timeout;
+  return function() {
+    var context = this, args = arguments;
+    var later = function(){
+      timeout = null;
+      if(!immediate) func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if(callNow) func.apply(context, args);
+  };
+};
+
+const sliderImages = document.querySelectorAll('.slide-in');
+
+function checkSlide(e){
+  sliderImages.forEach(sliderImage => {
+    // half way through the image
+    const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.offsetHeight / 2;
+    // bottom of the image
+    const imageBottom = sliderImage.offsetTop + sliderImage.offsetHeight;
+    const isHalfShown = slideInAt > sliderImage.offsetTop;
+    const isNotScrolledPast = window.scrollY < imageBottom;
+    // print values to the screen
+    console.log('Is Half Shown: ' + isHalfShown); // ??
+    console.log('Is Not Scrolled Past: ' + isNotScrolledPast);
+    if(isHalfShown && isNotScrolledPast) {
+      sliderImage.classList.add('active');
+    } else {
+      sliderImage.classList.remove('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', debounce(checkSlide));
 
 // SMOOTH SCROLLING
 function smoothScrolling(target, duration) {
@@ -187,30 +226,3 @@ function addEventToTheButton(element){
     });
   }
 }
-
-// SLIDE IN ANIMATION
-function debounce(func, wait = 20, immediate = true){
-  var timeout;
-  return function() {
-    var context = this, args = arguments;
-    var later = function(){
-      timeout = null;
-      if(!immediate) func.apply(context, args);
-    };
-    var callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if(callNow) func.apply(context, args);
-  };
-};
-
-const sliderImages = document.querySelectorAll('.slide-in');
-
-function checkSlide(e){
-  console.log(window.scrollY);
-  sliderImages.forEach(slideImages => {
-
-  });
-}
-
-window.addEventListener('scroll', debounce(checkSlide));

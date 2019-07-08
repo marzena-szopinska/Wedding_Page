@@ -53,3 +53,14 @@
     margin-top: 2rem;
   }
 }
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(-30%);
+  transition: all .3s ease;
+}
+
+.active {
+  opacity: 1;
+  transform: translateX(0%);
+}
