@@ -56,11 +56,11 @@
 
 .slide-in {
   opacity: 0;
-  transform: translateX(-30%);
-  transition: all .3s ease;
+  transform: translateY(30%) scale(0.85);
+  transition: all .4s ease;
 }
 
 .active {
   opacity: 1;
-  transform: translateX(0%);
+  transform: translateY(0%) scale(1);
 }
