@@ -16,7 +16,12 @@
     }
   }
 
+
+  @media (min-width: 1024px) {
+    height: 650px;
+  }
+
   @media (min-width: 2560px) {
-    height: 95vh;
+    height: 1000px;
   }
 }

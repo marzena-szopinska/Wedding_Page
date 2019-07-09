@@ -68,6 +68,13 @@
 
   }
 
+  @media (min-width: 768px){
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+    height: 90vh;
+  }
+
+
+
   @media (min-width: 2560px){
     clip-path: polygon(0 0, 100% 0, 100% 53vh, 0 100%);
     height: 65vh;

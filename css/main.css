@@ -858,9 +858,14 @@ footer .container .copyright {
     min-height: 100%;
   }
 }
+@media (min-width: 1024px) {
+  .video-bg {
+    height: 650px;
+  }
+}
 @media (min-width: 2560px) {
   .video-bg {
-    height: 95vh;
+    height: 1000px;
   }
 }
 
@@ -1006,6 +1011,16 @@ footer .container .copyright {
   font-weight: 900;
   color: #C0C0C0;
 }
+@media (min-width: 768px) {
+  .story {
+    padding-top: 20rem;
+  }
+}
+@media (min-width: 1024px) {
+  .story {
+    padding-top: 22rem;
+  }
+}
 @media (min-width: 1440px) {
   .story {
     padding-top: 17rem;
@@ -1043,9 +1058,14 @@ footer .container .copyright {
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
+@media (min-width: 768px) {
+  .rsvp {
+    height: 530px;
+  }
+}
 @media (min-width: 2560px) {
   .rsvp {
-    height: 45vh;
+    height: 600px;
   }
 }
 
@@ -1116,6 +1136,12 @@ footer .container .copyright {
 @media (min-width: 1440px) {
   .registry .container .brands {
     padding-top: 8rem;
+  }
+}
+@media (min-width: 768px) {
+  .registry {
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+    height: 90vh;
   }
 }
 @media (min-width: 2560px) {
