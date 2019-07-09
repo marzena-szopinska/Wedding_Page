@@ -350,6 +350,16 @@ body {
   letter-spacing: 1.5px;
   line-height: 1.2;
 }
+@media (min-width: 1440px) {
+  body {
+    font-size: 1.15rem;
+  }
+}
+@media (min-width: 2560px) {
+  body {
+    font-size: 2rem;
+  }
+}
 
 ul {
   list-style-type: none;
@@ -379,6 +389,11 @@ h2 {
 @media (min-width: 1024px) {
   h2 {
     font-size: 1.85rem;
+  }
+}
+@media (min-width: 2560px) {
+  h2 {
+    font-size: 2.85rem;
   }
 }
 
@@ -464,6 +479,12 @@ p {
     font-size: 0.75rem;
   }
 }
+@media (min-width: 2560px) {
+  .navigation-sm .nav-bar li {
+    font-size: 1.35rem;
+    padding: 2rem;
+  }
+}
 @media (min-width: 768px) {
   .navigation-sm .nav-bar {
     width: 50%;
@@ -478,6 +499,12 @@ p {
     left: 0;
     background-color: transparent;
     width: 16%;
+  }
+}
+@media (min-width: 2560px) {
+  .navigation-sm .nav-bar {
+    padding-top: 10rem;
+    width: 20%;
   }
 }
 .navigation-sm .show {
@@ -503,6 +530,11 @@ p {
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
+  }
+}
+@media (min-width: 2560px) {
+  .container {
+    max-width: 1550px;
   }
 }
 
@@ -542,6 +574,11 @@ p {
 @media (min-width: 768px) {
   .header .intro-text h1 {
     display: inline-block;
+  }
+}
+@media (min-width: 2560px) {
+  .header .intro-text h1 {
+    font-size: 4rem;
   }
 }
 .header .intro-text .and {
@@ -600,6 +637,11 @@ footer .container h3, footer .container p {
 }
 footer .container .copyright {
   font-size: 0.7rem;
+}
+@media (min-width: 2560px) {
+  footer .container .copyright {
+    font-size: 1.5rem;
+  }
 }
 
 .btn-white, .btn-pink {
@@ -660,13 +702,24 @@ footer .container .copyright {
 }
 @media (min-width: 1440px) {
   .btn-white-back p {
-    padding-top: 1rem;
+    padding-top: 0.75rem;
+  }
+}
+@media (min-width: 2560px) {
+  .btn-white-back p {
+    padding-top: 2rem;
   }
 }
 @media (min-width: 1440px) {
   .btn-white-back {
     height: 80px;
     width: 80px;
+  }
+}
+@media (min-width: 2560px) {
+  .btn-white-back {
+    height: 140px;
+    width: 140px;
   }
 }
 
@@ -738,6 +791,11 @@ footer .container .copyright {
     margin-top: 2rem;
   }
 }
+@media (min-width: 2560px) {
+  .composition {
+    margin-top: 4rem;
+  }
+}
 
 .slide-in {
   opacity: 0;
@@ -775,6 +833,11 @@ footer .container .copyright {
     width: 135px;
   }
 }
+@media (min-width: 2560px) {
+  .divider {
+    width: 270px;
+  }
+}
 
 .video-bg {
   width: 100%;
@@ -795,9 +858,26 @@ footer .container .copyright {
     min-height: 100%;
   }
 }
+@media (min-width: 2560px) {
+  .video-bg {
+    height: 95vh;
+  }
+}
 
 .map {
   background-color: #e0deda;
+  width: 100%;
+  height: 400px;
+}
+@media (min-width: 1440px) {
+  .map {
+    height: 600px;
+  }
+}
+@media (min-width: 2560px) {
+  .map {
+    height: 900px;
+  }
 }
 
 .details {
@@ -822,6 +902,16 @@ footer .container .copyright {
   transform: rotate(136deg);
   width: 150px;
   opacity: 0.2;
+}
+@media (min-width: 1440px) {
+  .details .container .center-box .decorated-text .divider {
+    width: 190px;
+  }
+}
+@media (min-width: 2560px) {
+  .details .container .center-box .decorated-text .divider {
+    width: 300px;
+  }
 }
 @media (min-width: 1024px) {
   .details .container .center-box .decorated-text h2 {
@@ -910,7 +1000,7 @@ footer .container .copyright {
 }
 .story p {
   font-style: italic;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .story p span {
   font-weight: 900;
@@ -920,6 +1010,12 @@ footer .container .copyright {
   .story {
     padding-top: 17rem;
     padding-bottom: 10rem;
+  }
+}
+@media (min-width: 2560px) {
+  .story {
+    padding-top: 30rem;
+    padding-bottom: 25rem;
   }
 }
 
@@ -946,6 +1042,11 @@ footer .container .copyright {
   font-style: italic;
   margin-top: 1rem;
   margin-bottom: 3rem;
+}
+@media (min-width: 2560px) {
+  .rsvp {
+    height: 45vh;
+  }
 }
 
 .registry {
@@ -1017,6 +1118,12 @@ footer .container .copyright {
     padding-top: 8rem;
   }
 }
+@media (min-width: 2560px) {
+  .registry {
+    clip-path: polygon(0 0, 100% 0, 100% 53vh, 0 100%);
+    height: 65vh;
+  }
+}
 
 .location-footer .container {
   margin-top: 6rem;
@@ -1037,6 +1144,16 @@ footer .container .copyright {
 .location .container p {
   margin-top: 2rem;
   font-style: italic;
+}
+@media (min-width: 1440px) {
+  .location {
+    margin-top: 10rem;
+  }
+}
+@media (min-width: 2560px) {
+  .location {
+    margin-top: 15rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -36,6 +36,10 @@
   text-decoration: none;
 }
 
+@mixin shadow {
+  
+}
+
 @mixin rounded ($width: null, $height: null) {
   width: $width;
   height: $height;

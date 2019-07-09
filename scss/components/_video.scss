@@ -15,4 +15,8 @@
       min-height: 100%;
     }
   }
+
+  @media (min-width: 2560px) {
+    height: 95vh;
+  }
 }

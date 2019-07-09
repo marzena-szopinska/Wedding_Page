@@ -18,4 +18,12 @@
       font-style: italic;
     }
   }
+
+  @media (min-width: 1440px){
+    margin-top: 10rem;
+  }
+
+  @media (min-width: 2560px){
+    margin-top: 15rem;
+  }
 }

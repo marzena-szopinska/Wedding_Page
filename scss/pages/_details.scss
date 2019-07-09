@@ -18,6 +18,15 @@
           transform: rotate(136deg);
           width: 150px;
           opacity: .2;
+
+          @media (min-width: 1440px){
+            width: 190px;
+          }
+
+          @media (min-width: 2560px){
+            width: 300px;
+          }
+
         }
 
         h2 {

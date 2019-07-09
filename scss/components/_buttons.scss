@@ -47,7 +47,11 @@
     text-align: center;
 
     @media (min-width: 1440px) {
-      padding-top: 1rem;
+      padding-top: .75rem;
+    }
+
+    @media (min-width: 2560px) {
+      padding-top: 2rem;
     }
   }
 
@@ -56,6 +60,10 @@
     width: 80px;
   }
 
+  @media (min-width: 2560px) {
+    height: 140px;
+    width: 140px;
+  }
 }
 
 .pulse {
