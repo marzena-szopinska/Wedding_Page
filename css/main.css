@@ -1006,6 +1006,11 @@ footer .container .copyright {
     justify-content: space-around;
   }
 }
+@media (min-width: 2560px) {
+  .details .container {
+    padding-top: 14rem;
+  }
+}
 
 .story {
   background-color: #f7e9e8;
@@ -1040,13 +1045,13 @@ footer .container .copyright {
 }
 @media (min-width: 1440px) {
   .story {
-    padding-top: 17rem;
-    padding-bottom: 10rem;
+    padding-top: 24rem;
+    padding-bottom: 15rem;
   }
 }
 @media (min-width: 2560px) {
   .story {
-    padding-top: 30rem;
+    padding-top: 40rem;
     padding-bottom: 25rem;
   }
 }
@@ -1057,7 +1062,7 @@ footer .container .copyright {
 }
 .rsvp .container {
   text-align: center;
-  padding-top: 6rem;
+  padding-top: 9rem;
   padding-bottom: 6rem;
   display: flex;
   flex-direction: column;
@@ -1094,7 +1099,7 @@ footer .container .copyright {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 .registry .container {
-  padding-top: 6rem;
+  padding-top: 9rem;
   margin-top: -4rem;
 }
 @media (min-width: 768px) {
@@ -1155,15 +1160,14 @@ footer .container .copyright {
     padding-top: 8rem;
   }
 }
-@media (min-width: 768px) {
-  .registry {
-    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
-    height: 90vh;
+@media (min-width: 2560px) {
+  .registry .container {
+    padding-top: 14rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .registry {
-    clip-path: polygon(0 0, 100% 0, 100% 555px, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 577px, 0 100%);
     height: 700px;
   }
 }

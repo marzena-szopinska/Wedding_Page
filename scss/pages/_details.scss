@@ -101,5 +101,9 @@
       display: flex;
       justify-content: space-around;
     }
+
+    @media (min-width: 2560px){
+      padding-top: 14rem;
+    }
   }
 }
