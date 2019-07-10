@@ -18,10 +18,14 @@
 
 
   @media (min-width: 1024px) {
-    height: 650px;
+    height: 625px;
+  }
+
+  @media (min-width: 1440px) {
+    height: 825px;
   }
 
   @media (min-width: 2560px) {
-    height: 1000px;
+    height: 1225px;
   }
 }

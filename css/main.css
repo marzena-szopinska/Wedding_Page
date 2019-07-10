@@ -643,6 +643,12 @@ footer .container .copyright {
     font-size: 1.5rem;
   }
 }
+@media (min-width: 2560px) {
+  footer .container {
+    margin-top: -25rem;
+    padding-top: 20rem;
+  }
+}
 
 .btn-white, .btn-pink {
   display: block;
@@ -860,12 +866,17 @@ footer .container .copyright {
 }
 @media (min-width: 1024px) {
   .video-bg {
-    height: 650px;
+    height: 625px;
+  }
+}
+@media (min-width: 1440px) {
+  .video-bg {
+    height: 825px;
   }
 }
 @media (min-width: 2560px) {
   .video-bg {
-    height: 1000px;
+    height: 1225px;
   }
 }
 
@@ -1144,10 +1155,22 @@ footer .container .copyright {
     height: 90vh;
   }
 }
+@media (min-width: 1024px) {
+  .registry {
+    clip-path: polygon(0 0, 100% 0, 100% 555px, 0 100%);
+    height: 700px;
+  }
+}
+@media (min-width: 1440px) {
+  .registry {
+    clip-path: polygon(0 0, 100% 0, 100% 604px, 0 100%);
+    height: 800px;
+  }
+}
 @media (min-width: 2560px) {
   .registry {
-    clip-path: polygon(0 0, 100% 0, 100% 53vh, 0 100%);
-    height: 65vh;
+    clip-path: polygon(0 0, 100% 0, 100% 718px, 0 100%);
+    height: 1100px;
   }
 }
 
