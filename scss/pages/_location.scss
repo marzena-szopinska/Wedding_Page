@@ -17,6 +17,7 @@
       margin-top: 2rem;
       font-style: italic;
     }
+
   }
 
   @media (min-width: 1440px){
@@ -25,5 +26,22 @@
 
   @media (min-width: 2560px){
     margin-top: 15rem;
+  }
+
+}
+
+.wrapper-location {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+    .location-footer {
+      .container {
+        margin-top: 2rem
+      }
+    }
+
+  .location-footer {
+    margin-top: auto;
   }
 }
