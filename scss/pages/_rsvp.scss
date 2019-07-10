@@ -1,27 +1,21 @@
 .rsvp {
-  // transform: skewY(-12deg);
   height: 60vh;
   background-color: $color-light-pink;
   .container {
-    text-align: center;
-    padding-top: 9rem;
-    padding-bottom: 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include center;
+    @include space-inside($top: 9rem, $bottom: 6rem);
+    @include flexy($dir: column, $just: center, $align: center);
 
     h2 {
       color: gray;
     }
 
     a {
-      text-decoration: none;
+      @include remove-underline;
     }
     p {
-      font-style: italic;
-      margin-top: 1rem;
-      margin-bottom: 3rem;
+      @include italic-font;
+      @include space-outside($top: 1rem, $bottom: 3rem);
     }
 
   }
@@ -29,10 +23,6 @@
   @media (min-width: 768px){
       height: 530px;
   }
-
-  // @media (min-width: 1024px){
-  //     height: 45vh;
-  // }
 
   @media (min-width: 2560px){
       height: 600px;

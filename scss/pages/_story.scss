@@ -1,46 +1,37 @@
 .story {
   background-color: $color-light-pink;
-  padding-top: 14rem;
-  padding-bottom: 7rem;
-  margin-top: -25vh;
-  text-align: center;
+  @include space-outside($top: -25vh);
+  @include space-inside($top: 14rem, $bottom: 7rem);
+  @include center;
 
   .container {
-
-
     @media (min-width: 768px) {
-        width: 75%;
-        margin: 0 auto;
+      @include center-container($width: 75%);
     }
   }
 
   p {
-    font-style: italic;
-    margin-bottom: 1rem;
-
+    @include italic-font;
+    @include space-outside($bottom: 1rem);
     span {
       font-weight: 900;
       color: #C0C0C0;
     }
-
   }
 
-
   @media (min-width: 768px){
-    padding-top: 20rem;
+    @include space-inside($top: 20rem);
   }
 
   @media (min-width: 1024px){
-    padding-top: 22rem;
+    @include space-inside($top: 22rem);
   }
 
   @media (min-width: 1440px){
-    padding-top: 24rem;
-    padding-bottom: 15rem;
+    @include space-inside($top: 24rem, $bottom: 15rem);
   }
 
   @media (min-width: 2560px){
-    padding-top: 40rem;
-    padding-bottom: 25rem;
+    @include space-inside($top: 40rem, $bottom: 25rem);
   }
 }

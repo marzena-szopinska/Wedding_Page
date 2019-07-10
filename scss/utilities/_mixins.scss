@@ -32,16 +32,46 @@
     font-style: italic;
 }
 
+@mixin center {
+  text-align: center;
+}
+
+@mixin center-container($width: null) {
+  width: $width;
+  margin: 0 auto;
+}
+
 @mixin remove-underline {
   text-decoration: none;
 }
 
 @mixin shadow {
-  
+
+}
+
+@mixin full-width {
+  width: 100%;
+}
+
+@mixin clip($clip: null, $height: null) {
+  clip-path: polygon(0 0, 100% 0, 100% $clip, 0 100%);
+  height: $height;
+}
+
+@mixin square($value: null){
+  height: $value;
+  width: $value;
 }
 
 @mixin rounded ($width: null, $height: null) {
   width: $width;
   height: $height;
   border-radius: 50%;
+}
+
+@mixin flexy($dir: row, $just: null, $align: null){
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $just;
+  align-items: $align;
 }
