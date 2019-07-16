@@ -1,31 +1,27 @@
 .video-bg {
-  width: 100%;
+  @include full-width;
   height: 100vh;
   position: relative;
   overflow: hidden;
   video {
-    position: absolute;
-    top: -40px;
-    left: 0;
+    @include positioning($position: absolute, $top: -40px, $left: 0);
     height: 100%;
-    @media (min-width: 1024px) {
+    @include media('large') {
       // override the height
       height: auto;
       width: 100%;
       min-height: 100%;
     }
   }
-
-
-  @media (min-width: 1024px) {
+  @include media('large') {
     height: 625px;
   }
 
-  @media (min-width: 1440px) {
+  @include media('extra-large') {
     height: 825px;
   }
 
-  @media (min-width: 2560px) {
+  @include media('huge') {
     height: 1225px;
   }
 }

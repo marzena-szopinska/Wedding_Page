@@ -1,22 +1,20 @@
 .navigation-sm {
-  width: 100%;
+  @include full-width;
   font-weight: 200;
   .menu-icon {
-    width: 100%;
+    @include full-width;
     text-align: right;
     color: $color-white;
     font-size: 2rem;
 
-    @media (min-width: 1024px){
+    @include media('large'){
       display: none;
     }
   }
 
   .nav-bar {
-    padding-top: 3.5rem;
-    position: absolute;
-    top: 0;
-    left: 0;
+    @include space-inside($top: 3.5rem);
+    @include positioning($position: absolute, $top: 0, $left: 0);
     width: 70%;
     height: 100vh;
     transition: all .5s linear;
@@ -27,58 +25,50 @@
     z-index: 2000;
     background-color: $color-light-gray;
     li {
-      margin: 0 auto;
-      width: 60%;
-      padding: 1rem;
+      @include center-container($width: 60%);
+      @include space-inside($top: 1rem, $right: 1rem, $bottom: 1rem, $left: 1rem);
       a {
         display: block;
-        text-decoration: none;
-        font-style: italic;
+        @include remove-underline;
+        @include italic-font;
         transition: all .2s ease;
         &:hover {
           color: darken($color-light-pink, 10%);
           transform: scale(1.2);
         }
-        @media (min-width:1024px){
+        @include media('large'){
           color: white;
         }
       }
 
-      @media (min-width:1024px){
+      @include media('large'){
           width: 90%;
           font-size: 0.75rem;
       }
 
-      // @media (min-width: 1440px){
-      //     font-size: 0.85rem;
-      // }
-
-      @media (min-width: 2560px){
+      @include media('huge'){
           font-size: 1.35rem;
-          padding: 2rem;
+          @include space-inside($top: 2rem, $right: 2rem, $bottom: 2rem, $left: 2rem);
       }
 
     }
 
-    @media (min-width:768px){
+    @include media('medium'){
       width: 50%;
     }
 
-    @media (min-width:1024px){
+    @include media('large'){
       transform: translateX(0);
       opacity: 1;
-      position: absolute;
-      top: 0;
-      left: 0;
+      @include positioning($position: absolute, $top: 0, $left: 0);
       background-color: transparent;
       width: 16%;
     }
 
-    @media (min-width: 2560px){
-        padding-top: 10rem;
+    @include media('huge'){
+      @include space-inside($top: 10rem);
         width: 20%;
     }
-
   }
 
   .show {
@@ -86,8 +76,7 @@
     opacity: 1;
   }
 
-  @media (min-width:1024px){
+  @include media('large'){
     font-weight: 400;
   }
-
 }

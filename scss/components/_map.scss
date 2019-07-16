@@ -1,18 +1,18 @@
 .map {
   background-color: $color-light-gray;
-  width: 100%;
+  @include full-width;
   height: 400px;
-  margin-bottom: 6rem;
+  @include space-outside($bottom: 6rem);
 
-  @media (min-width: 1024px){
+  @include media('large'){
     height: 500px;
   }
 
-  @media (min-width: 1440px){
+  @include media('extra-large'){
     height: 700px;
   }
 
-  @media (min-width: 2560px){
+  @include media('huge'){
     height: 900px;
   }
 }

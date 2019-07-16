@@ -1,16 +1,14 @@
 .divider {
   width: 120px;
-  position: absolute;
-  bottom: 0;
-  right: 3px;
+  @include positioning($position: absolute, $right: 3px, $bottom: 0);
   z-index: 2000;
   opacity: 0.3;
 
-  @media (min-width: 768px){
+  @include media('medium'){
     width: 135px;
   }
 
-  @media (min-width: 2560px){
+  @include media('huge'){
     width: 270px;
   }
 

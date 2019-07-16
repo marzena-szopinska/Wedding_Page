@@ -7,13 +7,12 @@
   .container {
     @include space-inside($top: 9rem);
     @include space-outside($top: -4rem);
-
     .spaced-letters {
-      @media (min-width: 768px){
+      @include media('medium'){
         @include letter-space($space: 20px);
       }
     }
-
+    
     p {
       @include space-outside($top: 4rem);
       @include italic-font;
@@ -27,11 +26,11 @@
       .icon {
         @include square($value: 60px);
 
-        @media (min-width: 768px){
+        @include media('medium'){
           @include square($value: 70px);
         }
 
-        @media (min-width: 1440px){
+        @include media('extra-large'){
           @include square($value: 85px);
         }
       }
@@ -40,42 +39,42 @@
         width: 75px;
         height: 60px;
 
-        @media (min-width: 768px){
+        @include media('medium'){
           width: 85px;
           height: 70px;
         }
 
-        @media (min-width: 1440px){
+        @include media('extra-large'){
           width: 115px;
           height: 85px;
         }
       }
 
-      @media (min-width: 768px){
+      @include media('medium'){
         @include space-inside($top: 5rem);
       }
 
-      @media (min-width: 1440px){
+      @include media('extra-large'){
         @include space-inside($top: 8rem);
       }
     }
 
-    @media (min-width: 2560px){
+    @include media('huge'){
       @include space-inside($top: 14rem);
     }
 
   }
 
-  @media (min-width: 768px){
+  @include media('medium'){
     @include clip($clip: 577px, $height: 700px);
   }
 
-  @media (min-width: 1440px){
+  @include media('extra-large'){
     @include clip($clip: 604px, $height: 800px);
   }
 
 
-  @media (min-width: 2560px){
+  @include media('huge'){
     @include clip($clip: 718px, $height: 1100px);
   }
 }

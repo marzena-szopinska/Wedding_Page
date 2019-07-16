@@ -20,11 +20,11 @@
 
   }
 
-  @media (min-width: 768px){
+  @include media('medium'){
       height: 530px;
   }
 
-  @media (min-width: 2560px){
+  @include media('huge'){
       height: 600px;
   }
 }

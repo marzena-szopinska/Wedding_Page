@@ -5,7 +5,7 @@
   @include center;
 
   .container {
-    @media (min-width: 768px) {
+    @include media('medium') {
       @include center-container($width: 75%);
     }
   }
@@ -19,19 +19,19 @@
     }
   }
 
-  @media (min-width: 768px){
+  @include media('medium'){
     @include space-inside($top: 20rem);
   }
 
-  @media (min-width: 1024px){
+  @include media('large'){
     @include space-inside($top: 22rem);
   }
 
-  @media (min-width: 1440px){
+  @include media('extra-large'){
     @include space-inside($top: 24rem, $bottom: 15rem);
   }
 
-  @media (min-width: 2560px){
+  @include media('huge'){
     @include space-inside($top: 40rem, $bottom: 25rem);
   }
 }

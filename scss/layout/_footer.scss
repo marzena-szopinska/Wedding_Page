@@ -2,28 +2,24 @@ footer {
   background-color: $color-light-pink;
   .container {
     position: relative;
-    margin-top: -13rem;
-    padding-top: 14rem;
-    font-style: italic;
-    text-align: center;
+    @include space-outside($top: -13rem);
+    @include space-inside($top: 14rem);
+    @include italic-font;
+    @include center;
     h3, p {
       font-weight: 200;
     }
 
     .copyright {
       font-size: 0.7rem;
-
-      @media (min-width: 2560px) {
+      @include media('huge') {
         font-size: 1.5rem;
       }
-
     }
 
-    @media (min-width: 2560px) {
-      margin-top: -25rem;
-      padding-top: 20rem;
+    @include media('huge') {
+      @include space-outside($top: -25rem);
+      @include space-inside($top: 20rem);
     }
-
-
   }
 }

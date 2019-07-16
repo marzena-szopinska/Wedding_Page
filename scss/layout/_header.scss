@@ -1,42 +1,38 @@
 .header {
-  text-align: center;
+  @include center;
   position: relative;
-  // make the header to take up the full vieport height and full width of the container
-  height: 100vh;
-  width: 100%;
+  @include full-width;
   // set up the background image
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/main-bg.jpg') no-repeat center;
   background-size: cover;
   // clip the background image
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  @include clip($clip: 75vh, $height: 100vh);
   .container {
     height: 100%;
 
-    @media (min-width: 768px){
-      width: 100%;
+    @include media('medium'){
+      @include full-width;
     }
   }
   .intro-text {
     width: 85%;
     background-color: rgba($color-white, .5);
-    padding: 1.5rem;
+    @include space-inside($top: 1.5rem, $right: 1.5rem, $bottom: 1.5rem, $left: 1.5rem);
     // add box shadow
     box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .5);
     // center this container inside its parent
-    position: absolute;
-    top: 45%;
-    left: 50%;
+    @include positioning($position: absolute, $top: 45%, $left: 50%);
     transform: translate(-50%, -50%);
     h1 {
-      letter-spacing: 3px;
+      @include letter-space(3px);
       font-weight: 300;
       font-size: 3rem;
-      text-transform: uppercase;
-      @media (min-width: 768px){
+      @include big-letters;
+      @include media('medium'){
         display: inline-block;
       }
 
-      @media (min-width: 2560px){
+      @include media('huge'){
         font-size: 4rem;
       }
     }
@@ -44,38 +40,35 @@
       font-weight: 300;
       font-size: 3rem;
       display: block;
-      @media (min-width: 768px){
+      @include media('medium'){
         display: inline-block;
       }
     }
     h3 {
-      margin-top: 1rem;
+      @include space-outside($top: 1rem);
       font-weight: 400;
       font-style: italic;
     }
 
     .spaced-words {
-      margin-bottom: 1rem;
+      @include space-outside($bottom: 1rem);
 
-      @media (min-width: 768px) {
+      @include media('medium') {
         word-spacing: 40px;
-        margin-bottom: 2rem;
+        @include space-outside($bottom: 2rem);
       }
-
     }
 
-    @media (min-width: 768px) {
-      padding-top: 4rem;
-      padding-bottom: 4rem;
+    @include media('medium') {
+      @include space-inside($top: 4rem, $bottom: 4rem);
     }
 
-    @media (min-width: 1024px) {
+    @include media('large') {
       width: 60%;
     }
 
-    @media (min-width: 1440px) {
+    @include media('extra-large') {
       width: 45%;
     }
-
   }
 }

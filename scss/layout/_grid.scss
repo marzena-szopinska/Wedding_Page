@@ -1,17 +1,16 @@
 .container {
-  width: 100%;
-  padding: 1rem;
+  @include full-width;
+  @include space-inside($top: 1rem, $right: 1rem, $bottom: 1rem, $left: 1rem) ;
 
-  @media (min-width: 768px){
-    margin: 0 auto;
-    width: 85%;
+  @include media('medium'){
+    @include center-container($width: 85%);
   }
 
-  @media (min-width: 1024px){
+  @include media('large'){
     max-width: 1024px;
   }
 
-  @media (min-width: 2560px){
+  @include media('huge'){
     max-width: 1550px;
   }
 

@@ -1,15 +1,11 @@
 .details {
-  width: 100%;
+  @include full-width;
   background-color: $color-white;
   .container {
     height: 100%;
-    padding-bottom: 6rem;
-    padding-top: 9rem;
-
+    @include space-inside($top: 9rem, $bottom: 6rem);
     .center-box {
-      display: flex;
-      justify-content: center;
-
+      @include flexy($just: center);
       .decorated-text {
         position: relative;
         .divider {
@@ -18,92 +14,75 @@
           transform: rotate(136deg);
           width: 150px;
           opacity: .2;
-
-          @media (min-width: 1440px){
+          @include media('extra-large'){
             width: 190px;
           }
 
-          @media (min-width: 2560px){
+          @include media('huge'){
             width: 300px;
           }
-
         }
-
         h2 {
-          @media (min-width: 1024px){
+          @include media('large'){
             text-align: left;
             line-height: 1.5;
           }
         }
-
-
       }
-
-      @media (min-width: 1024px){
+      @include media('large'){
         width: 30%;
       }
-
     }
-
     .wedding-info {
-      font-style: italic;
+      @include italic-font;
 
       .when {
-        margin-top: 4rem;
-
-        @media (min-width: 768px){
-          margin-top: 3rem;
+        @include space-outside($top: 4rem);
+        @include media('medium'){
+          @include space-outside($top: 3rem);
         }
       }
-
       .where {
-        margin-top: 3rem;
+        @include space-outside($top: 3rem);
       }
-
       .when, .where {
         h3 {
           color: $color-pink;
-          margin-top: 1rem;
-          margin-bottom: 1rem;
-
-          @media (min-width: 1024px){
-            margin-top: 0;
+          @include space-outside($top: 1rem, $bottom: 1rem);
+          @include media('large'){
+            @include space-outside($top: 0);
           }
         }
-        letter-spacing: 0.2rem;
-        margin-bottom: 3rem;
+        @include letter-space(.2rem);
+        @include space-outside($bottom: 3rem);
 
-        @media (min-width: 768px){
+        @include media('medium'){
           width: 48%;
-          text-align: center;
+          @include center;
         }
 
-        @media (min-width: 1024px){
+        @include media('large'){
           text-align: left;
-          width: 100%;
-          margin-top: 0;
+          @include full-width;
+          @include space-outside($top: 0);
         }
       }
 
-      @media (min-width: 768px){
-        display: flex;
-        justify-content: space-between;
+      @include media('medium'){
+        @include flexy($just: space-between);
       }
 
-      @media (min-width: 1024px) {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+      @include media('large') {
+        @include flexy($dir: column, $align: flex-start);
       }
     }
 
-    @media (min-width: 1024px){
-      display: flex;
-      justify-content: space-around;
+    @include media('large'){
+      @include flexy($just: space-around);
     }
 
-    @media (min-width: 2560px){
-      padding-top: 14rem;
+    @include media('huge'){
+      @include space-inside($top: 14rem);
     }
   }
 }
