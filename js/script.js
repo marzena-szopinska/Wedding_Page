@@ -13,7 +13,7 @@ hamburger.addEventListener('click', () => {
     displayHamburger = false;
     //.. remove specific part of the class
     hamburger.classList.remove('fa-bars');
-    //.. and insert another class to chnage the apperience of the hamburger into cross
+    //.. and insert another class to change the apperience of the hamburger into cross
     hamburger.classList.add('fa-times-circle');
     //.. add additional class to the nav-bar
     navBar.classList.add('show');
@@ -201,8 +201,19 @@ navBar.addEventListener('click', (e) => {
     const target = e.target;
     // get the link of this target
     const link = target.getAttribute('href');
+
+    //.. set displayHamburger to true
+    displayHamburger = true;
+    //.. remove specific part of the class
+    hamburger.classList.remove('fa-times-circle');
+    //.. and insert another class to chnage the apperience of the cross into hamburger
+    hamburger.classList.add('fa-bars');
+    //.. remove additional class to the nav-bar
+    navBar.classList.remove('show');
+
     // and play smooth scroll animation
     smoothScrolling(link, 2000);
+
   }
 });
 

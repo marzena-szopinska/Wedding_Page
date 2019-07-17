@@ -1,7 +1,7 @@
 .story {
   background-color: $color-light-pink;
   @include space-outside($top: -25vh);
-  @include space-inside($top: 14rem, $bottom: 7rem);
+  @include space-inside($top: 18rem, $bottom: 7rem);
   @include center;
 
   .container {
