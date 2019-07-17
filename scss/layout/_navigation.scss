@@ -60,9 +60,14 @@
     @include media('large'){
       transform: translateX(0);
       opacity: 1;
-      @include positioning($position: absolute, $top: 0, $left: 0);
+      @include positioning($position: absolute, $top: 0, $left: 22px);
       background-color: transparent;
       width: 16%;
+    }
+
+    @include media('extra-large'){
+      @include positioning($position: absolute, $top: 0, $left: 78px);
+      @include space-inside($top: 6rem);
     }
 
     @include media('huge'){

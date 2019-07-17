@@ -3,7 +3,7 @@
   background-color: $color-white;
   @include center;
   // clip the section right bottom corner
-  @include clip($clip: 75vh, $height: 100vh);
+  @include clip($clip: 81%, $height: 700px);
   .container {
     @include space-inside($top: 9rem);
     @include space-outside($top: -4rem);
@@ -12,7 +12,7 @@
         @include letter-space($space: 20px);
       }
     }
-    
+
     p {
       @include space-outside($top: 4rem);
       @include italic-font;
